@@ -16,6 +16,7 @@
 		DA9C8414150BDCBC001FB9EF /* MainStoryboard.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = DA9C8412150BDCBC001FB9EF /* MainStoryboard.storyboard */; };
 		DA9C8417150BDCBC001FB9EF /* MainViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = DA9C8416150BDCBC001FB9EF /* MainViewController.m */; };
 		DA9C841A150BDCBC001FB9EF /* FlipsideViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = DA9C8419150BDCBC001FB9EF /* FlipsideViewController.m */; };
+		DAF85B54150E994A00B64D6D /* CoreLocation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = DAF85B53150E994A00B64D6D /* CoreLocation.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -23,17 +24,18 @@
 		DA9C8400150BDCBB001FB9EF /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
 		DA9C8402150BDCBB001FB9EF /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
 		DA9C8404150BDCBB001FB9EF /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
-		DA9C8408150BDCBC001FB9EF /* Tip Calculator-Info.plist */ = {isa = PBXFileReference; path = "Tip Calculator-Info.plist"; sourceTree = "<group>"; };
+		DA9C8408150BDCBC001FB9EF /* Tip Calculator-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "Tip Calculator-Info.plist"; sourceTree = "<group>"; };
 		DA9C840A150BDCBC001FB9EF /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
 		DA9C840C150BDCBC001FB9EF /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
-		DA9C840E150BDCBC001FB9EF /* Tip Calculator-Prefix.pch */ = {isa = PBXFileReference; path = "Tip Calculator-Prefix.pch"; sourceTree = "<group>"; };
-		DA9C840F150BDCBC001FB9EF /* AppDelegate.h */ = {isa = PBXFileReference; path = AppDelegate.h; sourceTree = "<group>"; };
+		DA9C840E150BDCBC001FB9EF /* Tip Calculator-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "Tip Calculator-Prefix.pch"; sourceTree = "<group>"; };
+		DA9C840F150BDCBC001FB9EF /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
 		DA9C8410150BDCBC001FB9EF /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
 		DA9C8413150BDCBC001FB9EF /* en */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = en; path = en.lproj/MainStoryboard.storyboard; sourceTree = "<group>"; };
-		DA9C8415150BDCBC001FB9EF /* MainViewController.h */ = {isa = PBXFileReference; path = MainViewController.h; sourceTree = "<group>"; };
+		DA9C8415150BDCBC001FB9EF /* MainViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = MainViewController.h; sourceTree = "<group>"; };
 		DA9C8416150BDCBC001FB9EF /* MainViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = MainViewController.m; sourceTree = "<group>"; };
-		DA9C8418150BDCBC001FB9EF /* FlipsideViewController.h */ = {isa = PBXFileReference; path = FlipsideViewController.h; sourceTree = "<group>"; };
+		DA9C8418150BDCBC001FB9EF /* FlipsideViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = FlipsideViewController.h; sourceTree = "<group>"; };
 		DA9C8419150BDCBC001FB9EF /* FlipsideViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = FlipsideViewController.m; sourceTree = "<group>"; };
+		DAF85B53150E994A00B64D6D /* CoreLocation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreLocation.framework; path = System/Library/Frameworks/CoreLocation.framework; sourceTree = SDKROOT; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -41,6 +43,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				DAF85B54150E994A00B64D6D /* CoreLocation.framework in Frameworks */,
 				DA9C8401150BDCBB001FB9EF /* UIKit.framework in Frameworks */,
 				DA9C8403150BDCBB001FB9EF /* Foundation.framework in Frameworks */,
 				DA9C8405150BDCBB001FB9EF /* CoreGraphics.framework in Frameworks */,
@@ -70,6 +73,7 @@
 		DA9C83FF150BDCBB001FB9EF /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				DAF85B53150E994A00B64D6D /* CoreLocation.framework */,
 				DA9C8400150BDCBB001FB9EF /* UIKit.framework */,
 				DA9C8402150BDCBB001FB9EF /* Foundation.framework */,
 				DA9C8404150BDCBB001FB9EF /* CoreGraphics.framework */,
@@ -130,6 +134,7 @@
 			isa = PBXProject;
 			attributes = {
 				LastUpgradeCheck = 0420;
+				ORGANIZATIONNAME = "Planet K Games";
 			};
 			buildConfigurationList = DA9C83F6150BDCBB001FB9EF /* Build configuration list for PBXProject "Tip Calculator" */;
 			compatibilityVersion = "Xcode 3.2";
@@ -280,6 +285,7 @@
 				DA9C841F150BDCBC001FB9EF /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
