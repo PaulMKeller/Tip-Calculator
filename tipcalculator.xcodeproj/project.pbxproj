@@ -1,0 +1,371 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		DA58CA081517DF5800F4D067 /* iAd.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = DA58CA071517DF5800F4D067 /* iAd.framework */; };
+		DA58CA14151922A900F4D067 /* libsqlite3.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = DA58CA0E15190A8100F4D067 /* libsqlite3.dylib */; };
+		DA58CA16151922E700F4D067 /* TipCalc in Resources */ = {isa = PBXBuildFile; fileRef = DA58CA15151922E700F4D067 /* TipCalc */; };
+		DA58CA19151927AB00F4D067 /* CustomaryDetailsOM.m in Sources */ = {isa = PBXBuildFile; fileRef = DA58CA18151927AB00F4D067 /* CustomaryDetailsOM.m */; };
+		DA9262CF152640B200E51196 /* icon.png in Resources */ = {isa = PBXBuildFile; fileRef = DA9262CE152640B200E51196 /* icon.png */; };
+		DA9C8401150BDCBB001FB9EF /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = DA9C8400150BDCBB001FB9EF /* UIKit.framework */; };
+		DA9C8403150BDCBB001FB9EF /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = DA9C8402150BDCBB001FB9EF /* Foundation.framework */; };
+		DA9C8405150BDCBB001FB9EF /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = DA9C8404150BDCBB001FB9EF /* CoreGraphics.framework */; };
+		DA9C840B150BDCBC001FB9EF /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = DA9C8409150BDCBC001FB9EF /* InfoPlist.strings */; };
+		DA9C840D150BDCBC001FB9EF /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = DA9C840C150BDCBC001FB9EF /* main.m */; };
+		DA9C8411150BDCBC001FB9EF /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = DA9C8410150BDCBC001FB9EF /* AppDelegate.m */; };
+		DA9C8414150BDCBC001FB9EF /* MainStoryboard.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = DA9C8412150BDCBC001FB9EF /* MainStoryboard.storyboard */; };
+		DA9C8417150BDCBC001FB9EF /* MainViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = DA9C8416150BDCBC001FB9EF /* MainViewController.m */; };
+		DA9C841A150BDCBC001FB9EF /* FlipsideViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = DA9C8419150BDCBC001FB9EF /* FlipsideViewController.m */; };
+		DAA1292715225D0300D32657 /* money.png in Resources */ = {isa = PBXBuildFile; fileRef = DAA1292315225D0300D32657 /* money.png */; };
+		DAA1292815225D0300D32657 /* TipCalculator1.png in Resources */ = {isa = PBXBuildFile; fileRef = DAA1292415225D0300D32657 /* TipCalculator1.png */; };
+		DAA1292915225D0300D32657 /* TipCalculator2.png in Resources */ = {isa = PBXBuildFile; fileRef = DAA1292515225D0300D32657 /* TipCalculator2.png */; };
+		DAA1292A15225D0300D32657 /* TipCalculator3.png in Resources */ = {isa = PBXBuildFile; fileRef = DAA1292615225D0300D32657 /* TipCalculator3.png */; };
+		DAB68EA3150FF7540017AC4E /* SettingsViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = DAB68EA1150FF7540017AC4E /* SettingsViewController.m */; };
+		DAB68EA4150FF7540017AC4E /* SettingsViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = DAB68EA2150FF7540017AC4E /* SettingsViewController.xib */; };
+		DAE40281151F0922005FBB83 /* JokeOM.m in Sources */ = {isa = PBXBuildFile; fileRef = DAE40280151F0922005FBB83 /* JokeOM.m */; };
+		DAF85B54150E994A00B64D6D /* CoreLocation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = DAF85B53150E994A00B64D6D /* CoreLocation.framework */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		DA58CA071517DF5800F4D067 /* iAd.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = iAd.framework; path = System/Library/Frameworks/iAd.framework; sourceTree = SDKROOT; };
+		DA58CA0E15190A8100F4D067 /* libsqlite3.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = libsqlite3.dylib; path = usr/lib/libsqlite3.dylib; sourceTree = SDKROOT; };
+		DA58CA15151922E700F4D067 /* TipCalc */ = {isa = PBXFileReference; lastKnownFileType = file; path = TipCalc; sourceTree = "<group>"; };
+		DA58CA17151927AA00F4D067 /* CustomaryDetailsOM.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CustomaryDetailsOM.h; sourceTree = "<group>"; };
+		DA58CA18151927AB00F4D067 /* CustomaryDetailsOM.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CustomaryDetailsOM.m; sourceTree = "<group>"; };
+		DA9262CE152640B200E51196 /* icon.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = icon.png; sourceTree = "<group>"; };
+		DA9C83FC150BDCBB001FB9EF /* tipcalculator.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = tipcalculator.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		DA9C8400150BDCBB001FB9EF /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
+		DA9C8402150BDCBB001FB9EF /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
+		DA9C8404150BDCBB001FB9EF /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
+		DA9C8408150BDCBC001FB9EF /* tipcalculator-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "tipcalculator-Info.plist"; sourceTree = "<group>"; };
+		DA9C840A150BDCBC001FB9EF /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
+		DA9C840C150BDCBC001FB9EF /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		DA9C840E150BDCBC001FB9EF /* tipcalculator-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "tipcalculator-Prefix.pch"; sourceTree = "<group>"; };
+		DA9C840F150BDCBC001FB9EF /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
+		DA9C8410150BDCBC001FB9EF /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
+		DA9C8413150BDCBC001FB9EF /* en */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = en; path = en.lproj/MainStoryboard.storyboard; sourceTree = "<group>"; };
+		DA9C8415150BDCBC001FB9EF /* MainViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = MainViewController.h; sourceTree = "<group>"; };
+		DA9C8416150BDCBC001FB9EF /* MainViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = MainViewController.m; sourceTree = "<group>"; };
+		DA9C8418150BDCBC001FB9EF /* FlipsideViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = FlipsideViewController.h; sourceTree = "<group>"; };
+		DA9C8419150BDCBC001FB9EF /* FlipsideViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = FlipsideViewController.m; sourceTree = "<group>"; };
+		DAA1292315225D0300D32657 /* money.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = money.png; sourceTree = "<group>"; };
+		DAA1292415225D0300D32657 /* TipCalculator1.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = TipCalculator1.png; sourceTree = "<group>"; };
+		DAA1292515225D0300D32657 /* TipCalculator2.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = TipCalculator2.png; sourceTree = "<group>"; };
+		DAA1292615225D0300D32657 /* TipCalculator3.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = TipCalculator3.png; sourceTree = "<group>"; };
+		DAB68E8A150FDD940017AC4E /* TipCalcConfig.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TipCalcConfig.h; sourceTree = "<group>"; };
+		DAB68EA0150FF7540017AC4E /* SettingsViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SettingsViewController.h; sourceTree = "<group>"; };
+		DAB68EA1150FF7540017AC4E /* SettingsViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SettingsViewController.m; sourceTree = "<group>"; };
+		DAB68EA2150FF7540017AC4E /* SettingsViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = SettingsViewController.xib; sourceTree = "<group>"; };
+		DAE4027F151F0922005FBB83 /* JokeOM.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = JokeOM.h; sourceTree = "<group>"; };
+		DAE40280151F0922005FBB83 /* JokeOM.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = JokeOM.m; sourceTree = "<group>"; };
+		DAF85B53150E994A00B64D6D /* CoreLocation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreLocation.framework; path = System/Library/Frameworks/CoreLocation.framework; sourceTree = SDKROOT; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		DA9C83F9150BDCBB001FB9EF /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				DA58CA14151922A900F4D067 /* libsqlite3.dylib in Frameworks */,
+				DA58CA081517DF5800F4D067 /* iAd.framework in Frameworks */,
+				DAF85B54150E994A00B64D6D /* CoreLocation.framework in Frameworks */,
+				DA9C8401150BDCBB001FB9EF /* UIKit.framework in Frameworks */,
+				DA9C8403150BDCBB001FB9EF /* Foundation.framework in Frameworks */,
+				DA9C8405150BDCBB001FB9EF /* CoreGraphics.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		DA5B0D6915112D970008DEEC /* Graphics */ = {
+			isa = PBXGroup;
+			children = (
+				DA9262CE152640B200E51196 /* icon.png */,
+				DAA1292315225D0300D32657 /* money.png */,
+				DAA1292415225D0300D32657 /* TipCalculator1.png */,
+				DAA1292515225D0300D32657 /* TipCalculator2.png */,
+				DAA1292615225D0300D32657 /* TipCalculator3.png */,
+			);
+			name = Graphics;
+			sourceTree = "<group>";
+		};
+		DA9C83F1150BDCBB001FB9EF = {
+			isa = PBXGroup;
+			children = (
+				DA9C8406150BDCBB001FB9EF /* Tip Calculator */,
+				DA9C83FF150BDCBB001FB9EF /* Frameworks */,
+				DA9C83FD150BDCBB001FB9EF /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		DA9C83FD150BDCBB001FB9EF /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				DA9C83FC150BDCBB001FB9EF /* tipcalculator.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		DA9C83FF150BDCBB001FB9EF /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				DA58CA0E15190A8100F4D067 /* libsqlite3.dylib */,
+				DA58CA071517DF5800F4D067 /* iAd.framework */,
+				DAF85B53150E994A00B64D6D /* CoreLocation.framework */,
+				DA9C8400150BDCBB001FB9EF /* UIKit.framework */,
+				DA9C8402150BDCBB001FB9EF /* Foundation.framework */,
+				DA9C8404150BDCBB001FB9EF /* CoreGraphics.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		DA9C8406150BDCBB001FB9EF /* Tip Calculator */ = {
+			isa = PBXGroup;
+			children = (
+				DA58CA15151922E700F4D067 /* TipCalc */,
+				DA5B0D6915112D970008DEEC /* Graphics */,
+				DAB68E8A150FDD940017AC4E /* TipCalcConfig.h */,
+				DA9C840F150BDCBC001FB9EF /* AppDelegate.h */,
+				DA9C8410150BDCBC001FB9EF /* AppDelegate.m */,
+				DA9C8412150BDCBC001FB9EF /* MainStoryboard.storyboard */,
+				DA9C8415150BDCBC001FB9EF /* MainViewController.h */,
+				DA9C8416150BDCBC001FB9EF /* MainViewController.m */,
+				DA9C8418150BDCBC001FB9EF /* FlipsideViewController.h */,
+				DA9C8419150BDCBC001FB9EF /* FlipsideViewController.m */,
+				DA9C8407150BDCBC001FB9EF /* Supporting Files */,
+				DAB68EA0150FF7540017AC4E /* SettingsViewController.h */,
+				DAB68EA1150FF7540017AC4E /* SettingsViewController.m */,
+				DAB68EA2150FF7540017AC4E /* SettingsViewController.xib */,
+				DA58CA17151927AA00F4D067 /* CustomaryDetailsOM.h */,
+				DA58CA18151927AB00F4D067 /* CustomaryDetailsOM.m */,
+				DAE4027F151F0922005FBB83 /* JokeOM.h */,
+				DAE40280151F0922005FBB83 /* JokeOM.m */,
+			);
+			path = "Tip Calculator";
+			sourceTree = "<group>";
+		};
+		DA9C8407150BDCBC001FB9EF /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				DA9C8408150BDCBC001FB9EF /* tipcalculator-Info.plist */,
+				DA9C8409150BDCBC001FB9EF /* InfoPlist.strings */,
+				DA9C840C150BDCBC001FB9EF /* main.m */,
+				DA9C840E150BDCBC001FB9EF /* tipcalculator-Prefix.pch */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		DA9C83FB150BDCBB001FB9EF /* tipcalculator */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = DA9C841D150BDCBC001FB9EF /* Build configuration list for PBXNativeTarget "tipcalculator" */;
+			buildPhases = (
+				DA9C83F8150BDCBB001FB9EF /* Sources */,
+				DA9C83F9150BDCBB001FB9EF /* Frameworks */,
+				DA9C83FA150BDCBB001FB9EF /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = tipcalculator;
+			productName = "Tip Calculator";
+			productReference = DA9C83FC150BDCBB001FB9EF /* tipcalculator.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		DA9C83F3150BDCBB001FB9EF /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 0420;
+				ORGANIZATIONNAME = "Planet K Games";
+			};
+			buildConfigurationList = DA9C83F6150BDCBB001FB9EF /* Build configuration list for PBXProject "tipcalculator" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+			);
+			mainGroup = DA9C83F1150BDCBB001FB9EF;
+			productRefGroup = DA9C83FD150BDCBB001FB9EF /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				DA9C83FB150BDCBB001FB9EF /* tipcalculator */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		DA9C83FA150BDCBB001FB9EF /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				DA9C840B150BDCBC001FB9EF /* InfoPlist.strings in Resources */,
+				DA9C8414150BDCBC001FB9EF /* MainStoryboard.storyboard in Resources */,
+				DAB68EA4150FF7540017AC4E /* SettingsViewController.xib in Resources */,
+				DA58CA16151922E700F4D067 /* TipCalc in Resources */,
+				DAA1292715225D0300D32657 /* money.png in Resources */,
+				DAA1292815225D0300D32657 /* TipCalculator1.png in Resources */,
+				DAA1292915225D0300D32657 /* TipCalculator2.png in Resources */,
+				DAA1292A15225D0300D32657 /* TipCalculator3.png in Resources */,
+				DA9262CF152640B200E51196 /* icon.png in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		DA9C83F8150BDCBB001FB9EF /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				DA9C840D150BDCBC001FB9EF /* main.m in Sources */,
+				DA9C8411150BDCBC001FB9EF /* AppDelegate.m in Sources */,
+				DA9C8417150BDCBC001FB9EF /* MainViewController.m in Sources */,
+				DA9C841A150BDCBC001FB9EF /* FlipsideViewController.m in Sources */,
+				DAB68EA3150FF7540017AC4E /* SettingsViewController.m in Sources */,
+				DA58CA19151927AB00F4D067 /* CustomaryDetailsOM.m in Sources */,
+				DAE40281151F0922005FBB83 /* JokeOM.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXVariantGroup section */
+		DA9C8409150BDCBC001FB9EF /* InfoPlist.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				DA9C840A150BDCBC001FB9EF /* en */,
+			);
+			name = InfoPlist.strings;
+			sourceTree = "<group>";
+		};
+		DA9C8412150BDCBC001FB9EF /* MainStoryboard.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				DA9C8413150BDCBC001FB9EF /* en */,
+			);
+			name = MainStoryboard.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		DA9C841B150BDCBC001FB9EF /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ARCHS = "$(ARCHS_STANDARD_32_BIT)";
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer: Paul Keller (553KV9KF8W)";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer: Paul Keller (553KV9KF8W)";
+				COPY_PHASE_STRIP = NO;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				GCC_VERSION = com.apple.compilers.llvm.clang.1_0;
+				GCC_WARN_ABOUT_MISSING_PROTOTYPES = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 5.0;
+				PROVISIONING_PROFILE = "F929BC3F-F685-4B73-AE5E-941685953605";
+				"PROVISIONING_PROFILE[sdk=iphoneos*]" = "F929BC3F-F685-4B73-AE5E-941685953605";
+				SDKROOT = iphoneos;
+			};
+			name = Debug;
+		};
+		DA9C841C150BDCBC001FB9EF /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ARCHS = "$(ARCHS_STANDARD_32_BIT)";
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CODE_SIGN_IDENTITY = "iPhone Distribution: Paul Keller";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Distribution: Paul Keller";
+				COPY_PHASE_STRIP = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_VERSION = com.apple.compilers.llvm.clang.1_0;
+				GCC_WARN_ABOUT_MISSING_PROTOTYPES = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 5.0;
+				OTHER_CFLAGS = "-DNS_BLOCK_ASSERTIONS=1";
+				PROVISIONING_PROFILE = "0DF6AB47-9625-4DE0-BEA5-17D05B14E458";
+				"PROVISIONING_PROFILE[sdk=iphoneos*]" = "0DF6AB47-9625-4DE0-BEA5-17D05B14E458";
+				SDKROOT = iphoneos;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		DA9C841E150BDCBC001FB9EF /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer: Paul Keller (553KV9KF8W)";
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "Tip Calculator/tipcalculator-Prefix.pch";
+				INFOPLIST_FILE = "Tip Calculator/tipcalculator-Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 5.0;
+				PRODUCT_NAME = tipcalculator;
+				"PROVISIONING_PROFILE[sdk=iphoneos*]" = "F929BC3F-F685-4B73-AE5E-941685953605";
+				SDKROOT = iphoneos5.0;
+				WRAPPER_EXTENSION = app;
+			};
+			name = Debug;
+		};
+		DA9C841F150BDCBC001FB9EF /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer: Paul Keller (553KV9KF8W)";
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "Tip Calculator/tipcalculator-Prefix.pch";
+				INFOPLIST_FILE = "Tip Calculator/tipcalculator-Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 5.0;
+				PRODUCT_NAME = tipcalculator;
+				"PROVISIONING_PROFILE[sdk=iphoneos*]" = "F929BC3F-F685-4B73-AE5E-941685953605";
+				SDKROOT = iphoneos5.0;
+				WRAPPER_EXTENSION = app;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		DA9C83F6150BDCBB001FB9EF /* Build configuration list for PBXProject "tipcalculator" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				DA9C841B150BDCBC001FB9EF /* Debug */,
+				DA9C841C150BDCBC001FB9EF /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		DA9C841D150BDCBC001FB9EF /* Build configuration list for PBXNativeTarget "tipcalculator" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				DA9C841E150BDCBC001FB9EF /* Debug */,
+				DA9C841F150BDCBC001FB9EF /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = DA9C83F3150BDCBB001FB9EF /* Project object */;
+}

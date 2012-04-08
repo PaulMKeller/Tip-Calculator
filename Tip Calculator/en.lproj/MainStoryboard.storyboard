@@ -14,7 +14,7 @@
                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                         <subviews>
                             <button opaque="NO" clearsContextBeforeDrawing="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="infoLight" showsTouchWhenHighlighted="YES" lineBreakMode="middleTruncation" id="10">
-                                <rect key="frame" x="282" y="421" width="18" height="19"/>
+                                <rect key="frame" x="282" y="368" width="18" height="19"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMinX="YES" flexibleMinY="YES"/>
                                 <fontDescription key="fontDescription" name="Helvetica-Bold" family="Helvetica" pointSize="15"/>
                                 <state key="normal">
@@ -28,91 +28,74 @@
                                     <segue destination="6" kind="modal" identifier="showAlternate" modalTransitionStyle="flipHorizontal" id="11"/>
                                 </connections>
                             </button>
-                            <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" text="Planet K Games Tip Calulator" textAlignment="center" lineBreakMode="tailTruncation" minimumFontSize="10" id="AFk-RR-M0p">
-                                <rect key="frame" x="39" y="58" width="243" height="21"/>
+                            <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" text="Tip Calulator" textAlignment="center" lineBreakMode="tailTruncation" minimumFontSize="10" id="AFk-RR-M0p">
+                                <rect key="frame" x="39" y="5" width="243" height="21"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                 <color key="textColor" red="0.0" green="0.30470610573891077" blue="0.98913043478260865" alpha="1" colorSpace="calibratedRGB"/>
                                 <nil key="highlightedColor"/>
                             </label>
                             <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" text="Bill Amount:" textAlignment="right" lineBreakMode="tailTruncation" minimumFontSize="10" id="7x1-6P-BdJ">
-                                <rect key="frame" x="45" y="92" width="99" height="21"/>
+                                <rect key="frame" x="45" y="39" width="99" height="21"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="13"/>
                                 <color key="textColor" red="0.0" green="0.30470610573891077" blue="0.98913043478260865" alpha="1" colorSpace="calibratedRGB"/>
                                 <nil key="highlightedColor"/>
                             </label>
-                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" minimumFontSize="17" id="s43-w0-gy9">
-                                <rect key="frame" x="151" y="87" width="103" height="31"/>
+                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" text="0.00" borderStyle="roundedRect" minimumFontSize="17" id="s43-w0-gy9">
+                                <rect key="frame" x="151" y="34" width="103" height="31"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                 <textInputTraits key="textInputTraits" keyboardType="numberPad" returnKeyType="done" enablesReturnKeyAutomatically="YES"/>
                                 <connections>
+                                    <action selector="beginEdit:" destination="2" eventType="editingDidBegin" id="lFm-W4-CYW"/>
                                     <action selector="endEdit:" destination="2" eventType="editingDidEndOnExit" id="tsp-Ta-1du"/>
                                 </connections>
                             </textField>
                             <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" text="Tip Percentage:" textAlignment="right" lineBreakMode="tailTruncation" minimumFontSize="10" id="AFz-ii-TUL">
-                                <rect key="frame" x="19" y="129" width="125" height="21"/>
+                                <rect key="frame" x="19" y="76" width="125" height="21"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="13"/>
                                 <color key="textColor" red="0.0" green="0.30470610573891077" blue="0.98913043478260865" alpha="1" colorSpace="calibratedRGB"/>
                                 <nil key="highlightedColor"/>
                             </label>
-                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" minimumFontSize="17" id="SjK-tm-mI5">
-                                <rect key="frame" x="68" y="5" width="51" height="31"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
-                                <textInputTraits key="textInputTraits" keyboardType="numbersAndPunctuation" returnKeyType="done" enablesReturnKeyAutomatically="YES"/>
-                                <connections>
-                                    <action selector="endEdit:" destination="2" eventType="editingDidEndOnExit" id="vNK-ja-mGR"/>
-                                </connections>
-                            </textField>
                             <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" text="Number of People:" textAlignment="right" lineBreakMode="tailTruncation" minimumFontSize="10" id="arJ-DW-Und">
-                                <rect key="frame" x="0.0" y="168" width="144" height="21"/>
+                                <rect key="frame" x="0.0" y="115" width="144" height="21"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="13"/>
                                 <color key="textColor" red="0.0" green="0.30470610573891077" blue="0.98913043478260865" alpha="1" colorSpace="calibratedRGB"/>
                                 <nil key="highlightedColor"/>
                             </label>
-                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" minimumFontSize="17" id="cPV-hT-JaF">
-                                <rect key="frame" x="127" y="5" width="59" height="31"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
-                                <textInputTraits key="textInputTraits" keyboardType="numbersAndPunctuation" returnKeyType="done" enablesReturnKeyAutomatically="YES"/>
-                                <connections>
-                                    <action selector="endEdit:" destination="2" eventType="editingDidEndOnExit" id="1Kp-wC-bRA"/>
-                                </connections>
-                            </textField>
                             <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" text="Cost Per Person:" textAlignment="right" lineBreakMode="tailTruncation" minimumFontSize="10" id="ZvV-O3-5Pv">
-                                <rect key="frame" x="13" y="279" width="130" height="21"/>
+                                <rect key="frame" x="13" y="226" width="130" height="21"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="13"/>
                                 <color key="textColor" red="0.0" green="0.30470610573891077" blue="0.98913043478260865" alpha="1" colorSpace="calibratedRGB"/>
                                 <nil key="highlightedColor"/>
                             </label>
                             <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" text="" lineBreakMode="tailTruncation" minimumFontSize="10" id="OHI-8i-n64">
-                                <rect key="frame" x="151" y="279" width="157" height="21"/>
+                                <rect key="frame" x="151" y="226" width="157" height="21"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                 <color key="textColor" red="0.0" green="0.30470610573891077" blue="0.98913043478260865" alpha="1" colorSpace="calibratedRGB"/>
                                 <nil key="highlightedColor"/>
                             </label>
                             <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" text="Total Bill Cost:" textAlignment="right" lineBreakMode="tailTruncation" minimumFontSize="10" id="dMH-Wd-NHW">
-                                <rect key="frame" x="13" y="301" width="130" height="21"/>
+                                <rect key="frame" x="13" y="248" width="130" height="21"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="13"/>
                                 <color key="textColor" red="0.0" green="0.30470610570000001" blue="0.98913043479999996" alpha="1" colorSpace="calibratedRGB"/>
                                 <nil key="highlightedColor"/>
                             </label>
                             <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" text="" lineBreakMode="tailTruncation" minimumFontSize="10" id="rFd-sI-yDJ">
-                                <rect key="frame" x="151" y="301" width="157" height="21"/>
+                                <rect key="frame" x="151" y="248" width="157" height="21"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                 <color key="textColor" red="0.0" green="0.30470610570000001" blue="0.98913043479999996" alpha="1" colorSpace="calibratedRGB"/>
                                 <nil key="highlightedColor"/>
                             </label>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" id="QUT-Ha-ltK">
-                                <rect key="frame" x="217" y="206" width="92" height="37"/>
+                                <rect key="frame" x="217" y="153" width="92" height="37"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <fontDescription key="fontDescription" type="boldSystem" pointSize="15"/>
                                 <state key="normal" title="Calculate">
@@ -126,73 +109,51 @@
                                     <action selector="CalculateTip:" destination="2" eventType="touchUpInside" id="v0m-dZ-NSO"/>
                                 </connections>
                             </button>
-                            <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" text="Why are pirates called pirates? Coz they Arrrrrrrgh..." lineBreakMode="wordWrap" numberOfLines="0" minimumFontSize="10" id="Z94-RJ-cHe">
-                                <rect key="frame" x="14" y="353" width="295" height="50"/>
+                            <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" text="Joke" lineBreakMode="wordWrap" numberOfLines="0" minimumFontSize="10" id="Z94-RJ-cHe">
+                                <rect key="frame" x="14" y="300" width="295" height="50"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="13"/>
                                 <color key="textColor" red="0.0" green="0.30470610573891077" blue="0.98913043478260865" alpha="1" colorSpace="calibratedRGB"/>
                                 <nil key="highlightedColor"/>
                             </label>
                             <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" text="Tip:" textAlignment="right" lineBreakMode="tailTruncation" minimumFontSize="10" id="3Vw-Om-umR">
-                                <rect key="frame" x="13" y="255" width="130" height="21"/>
+                                <rect key="frame" x="13" y="202" width="130" height="21"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="13"/>
                                 <color key="textColor" red="0.0" green="0.30470610570000001" blue="0.98913043479999996" alpha="1" colorSpace="calibratedRGB"/>
                                 <nil key="highlightedColor"/>
                             </label>
                             <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" text="" lineBreakMode="tailTruncation" minimumFontSize="10" id="da4-3F-Y3D">
-                                <rect key="frame" x="151" y="255" width="157" height="21"/>
+                                <rect key="frame" x="151" y="202" width="157" height="21"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                 <color key="textColor" red="0.0" green="0.30470610570000001" blue="0.98913043479999996" alpha="1" colorSpace="calibratedRGB"/>
                                 <nil key="highlightedColor"/>
                             </label>
                             <pickerView contentMode="scaleToFill" id="EiN-On-ZBB">
-                                <rect key="frame" x="0.0" y="244" width="320" height="216"/>
+                                <rect key="frame" x="0.0" y="191" width="320" height="216"/>
                                 <autoresizingMask key="autoresizingMask" widthSizable="YES" flexibleMaxY="YES"/>
                                 <connections>
                                     <outlet property="dataSource" destination="2" id="Qrm-St-3Ih"/>
                                     <outlet property="delegate" destination="2" id="vEx-Cu-0ih"/>
                                 </connections>
                             </pickerView>
-                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="detailDisclosure" lineBreakMode="middleTruncation" id="ZOT-sp-dfz" userLabel="Pick Bill Amount">
-                                <rect key="frame" x="283" y="2" width="29" height="31"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <fontDescription key="fontDescription" type="boldSystem" pointSize="15"/>
-                                <state key="normal">
-                                    <color key="titleColor" red="0.19607843459999999" green="0.30980393290000002" blue="0.52156865600000002" alpha="1" colorSpace="calibratedRGB"/>
-                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
-                                </state>
-                                <state key="highlighted">
-                                    <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
-                                </state>
-                                <connections>
-                                    <action selector="pickBillAmount:" destination="2" eventType="touchUpInside" id="was-vs-U3Q"/>
-                                </connections>
-                            </button>
-                            <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" text="Bill Amount" lineBreakMode="tailTruncation" minimumFontSize="10" id="ky8-IL-cgh">
-                                <rect key="frame" x="194" y="8" width="103" height="21"/>
+                            <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" text="10%" lineBreakMode="tailTruncation" minimumFontSize="10" id="dRi-vm-iHp">
+                                <rect key="frame" x="151" y="76" width="103" height="21"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                 <color key="textColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="calibratedRGB"/>
                                 <nil key="highlightedColor"/>
                             </label>
-                            <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" text="" lineBreakMode="tailTruncation" minimumFontSize="10" id="dRi-vm-iHp">
-                                <rect key="frame" x="151" y="129" width="103" height="21"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
-                                <color key="textColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="calibratedRGB"/>
-                                <nil key="highlightedColor"/>
-                            </label>
-                            <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" text="" lineBreakMode="tailTruncation" minimumFontSize="10" id="H5I-QU-Rvd">
-                                <rect key="frame" x="151" y="168" width="103" height="21"/>
+                            <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" text="1" lineBreakMode="tailTruncation" minimumFontSize="10" id="H5I-QU-Rvd">
+                                <rect key="frame" x="151" y="115" width="103" height="21"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                 <color key="textColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="calibratedRGB"/>
                                 <nil key="highlightedColor"/>
                             </label>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="detailDisclosure" lineBreakMode="middleTruncation" id="rTl-Wo-AIU" userLabel="Pick Tip Percentage">
-                                <rect key="frame" x="265" y="124" width="29" height="31"/>
+                                <rect key="frame" x="265" y="71" width="29" height="31"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <fontDescription key="fontDescription" type="boldSystem" pointSize="15"/>
                                 <state key="normal">
@@ -207,7 +168,7 @@
                                 </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="detailDisclosure" lineBreakMode="middleTruncation" id="2hy-pp-ynh" userLabel="Pick Number of People">
-                                <rect key="frame" x="265" y="163" width="29" height="31"/>
+                                <rect key="frame" x="265" y="110" width="29" height="31"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <fontDescription key="fontDescription" type="boldSystem" pointSize="15"/>
                                 <state key="normal">
@@ -221,20 +182,30 @@
                                     <action selector="pickNumberOfPeople:" destination="2" eventType="touchUpInside" id="igg-rY-a8z"/>
                                 </connections>
                             </button>
+                            <adBannerView opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" id="iGa-9O-PJL">
+                                <rect key="frame" x="0.0" y="410" width="320" height="50"/>
+                                <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES" flexibleMaxY="YES"/>
+                                <requiredContentSizeIdentifiers>
+                                    <string>ADBannerContentSizeLandscape</string>
+                                    <string>ADBannerContentSizePortrait</string>
+                                </requiredContentSizeIdentifiers>
+                            </adBannerView>
                         </subviews>
                         <color key="backgroundColor" white="0.0" alpha="1" colorSpace="calibratedWhite"/>
                     </view>
                     <connections>
                         <outlet property="lblCostPerPerson" destination="OHI-8i-n64" id="eKO-lH-w9I"/>
+                        <outlet property="lblCostPerPersonLabel" destination="ZvV-O3-5Pv" id="qAb-TR-SDZ"/>
+                        <outlet property="lblJoke" destination="Z94-RJ-cHe" id="2HP-J6-6s3"/>
                         <outlet property="lblNumberOfPeople" destination="H5I-QU-Rvd" id="g4W-yB-43a"/>
                         <outlet property="lblTip" destination="da4-3F-Y3D" id="hYz-5n-STq"/>
+                        <outlet property="lblTipLabel" destination="3Vw-Om-umR" id="3wP-cA-Qco"/>
                         <outlet property="lblTipPercentage" destination="dRi-vm-iHp" id="I2y-7K-NbV"/>
-                        <outlet property="lblTotalBill" destination="ky8-IL-cgh" id="646-5P-q8e"/>
+                        <outlet property="lblTotalBill" destination="7x1-6P-BdJ" id="g4Q-gE-yUh"/>
                         <outlet property="lblTotalBillCost" destination="rFd-sI-yDJ" id="RNr-WP-N42"/>
+                        <outlet property="lblTotalBillCostLabel" destination="dMH-Wd-NHW" id="i0j-7I-E7Y"/>
                         <outlet property="locationManager" destination="4EM-EU-QJN" id="qin-9s-IuR"/>
                         <outlet property="myPickerView" destination="EiN-On-ZBB" id="yi6-Bi-oL7"/>
-                        <outlet property="txtNumberOfPeople" destination="cPV-hT-JaF" id="mvv-vs-EV6"/>
-                        <outlet property="txtTipPercentage" destination="SjK-tm-mI5" id="911-Qh-VWx"/>
                         <outlet property="txtTotalBill" destination="s43-w0-gy9" id="FDf-wr-qSW"/>
                     </connections>
                 </viewController>
@@ -262,17 +233,17 @@
                                     </navigationItem>
                                 </items>
                             </navigationBar>
-                            <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" text="Current Location Tip %:" lineBreakMode="tailTruncation" minimumFontSize="10" id="z0O-GE-UJH">
+                            <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" text="Tip Suggestions:" lineBreakMode="tailTruncation" minimumFontSize="10" id="z0O-GE-UJH">
                                 <rect key="frame" x="20" y="114" width="191" height="21"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                 <color key="textColor" red="0.0" green="0.30470610570000001" blue="0.98913043479999996" alpha="1" colorSpace="calibratedRGB"/>
                                 <nil key="highlightedColor"/>
                             </label>
-                            <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" text="Current Country and Tip %" lineBreakMode="tailTruncation" minimumFontSize="10" id="2wD-r8-qgG">
-                                <rect key="frame" x="20" y="143" width="290" height="21"/>
+                            <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" text="Country:" lineBreakMode="tailTruncation" minimumFontSize="10" id="2wD-r8-qgG">
+                                <rect key="frame" x="20" y="143" width="73" height="21"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                 <color key="textColor" red="0.0" green="0.30470610570000001" blue="0.98913043479999996" alpha="1" colorSpace="calibratedRGB"/>
                                 <nil key="highlightedColor"/>
                             </label>
@@ -286,7 +257,43 @@
                             <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" text="Use Location Services:" lineBreakMode="tailTruncation" minimumFontSize="10" id="x6e-o0-hcS">
                                 <rect key="frame" x="20" y="68" width="191" height="21"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <color key="textColor" red="0.0" green="0.30470610570000001" blue="0.98913043479999996" alpha="1" colorSpace="calibratedRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" text="Current Country" lineBreakMode="tailTruncation" minimumFontSize="10" id="tW8-u6-v2W">
+                                <rect key="frame" x="145" y="143" width="168" height="21"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <color key="textColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="calibratedRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" text="Customary Tip:" lineBreakMode="tailTruncation" minimumFontSize="10" id="Pdr-ZH-thB">
+                                <rect key="frame" x="20" y="172" width="125" height="21"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <color key="textColor" red="0.0" green="0.30470610570000001" blue="0.98913043479999996" alpha="1" colorSpace="calibratedRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" text="Customary Tip" lineBreakMode="tailTruncation" minimumFontSize="10" id="gal-4w-BiX">
+                                <rect key="frame" x="145" y="172" width="168" height="21"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <color key="textColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="calibratedRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <pickerView contentMode="scaleToFill" id="B83-th-QMJ">
+                                <rect key="frame" x="0.0" y="244" width="320" height="216"/>
+                                <autoresizingMask key="autoresizingMask" widthSizable="YES" flexibleMaxY="YES"/>
+                                <connections>
+                                    <outlet property="dataSource" destination="6" id="dP5-yn-oRB"/>
+                                    <outlet property="delegate" destination="6" id="gdC-AR-QWd"/>
+                                </connections>
+                            </pickerView>
+                            <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" text="Set Default Tip Percentage:" lineBreakMode="tailTruncation" minimumFontSize="10" id="vx3-ja-Hbt">
+                                <rect key="frame" x="20" y="208" width="251" height="21"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                 <color key="textColor" red="0.0" green="0.30470610570000001" blue="0.98913043479999996" alpha="1" colorSpace="calibratedRGB"/>
                                 <nil key="highlightedColor"/>
                             </label>
@@ -294,14 +301,20 @@
                         <color key="backgroundColor" cocoaTouchSystemColor="darkTextColor"/>
                     </view>
                     <connections>
+                        <outlet property="countrySettingsHeader" destination="z0O-GE-UJH" id="v4z-AI-SRR"/>
+                        <outlet property="currentCountry" destination="tW8-u6-v2W" id="JQE-nm-TNr"/>
+                        <outlet property="currentCountryLabel" destination="2wD-r8-qgG" id="LS0-U9-ABT"/>
+                        <outlet property="customaryTip" destination="gal-4w-BiX" id="L3i-nB-Tns"/>
+                        <outlet property="customaryTipLabel" destination="Pdr-ZH-thB" id="xUz-b6-XCE"/>
                         <outlet property="delegate" destination="2" id="15"/>
                         <outlet property="locationManager" destination="4EM-EU-QJN" id="jyX-dR-EM1"/>
+                        <outlet property="pickerView" destination="B83-th-QMJ" id="1z0-1k-jS5"/>
                         <outlet property="toggleSwitch" destination="JyL-vX-UQ3" id="RhA-Pr-x4o"/>
                     </connections>
                 </viewController>
                 <customObject id="4EM-EU-QJN" customClass="CLLocationManager"/>
             </objects>
-            <point key="canvasLocation" x="382" y="-68"/>
+            <point key="canvasLocation" x="359" y="-68"/>
         </scene>
     </scenes>
     <classes>
@@ -313,8 +326,14 @@
             <relationships>
                 <relationship kind="action" name="done:"/>
                 <relationship kind="action" name="switchThrown:"/>
+                <relationship kind="outlet" name="countrySettingsHeader" candidateClass="UILabel"/>
+                <relationship kind="outlet" name="currentCountry" candidateClass="UILabel"/>
+                <relationship kind="outlet" name="currentCountryLabel" candidateClass="UILabel"/>
+                <relationship kind="outlet" name="customaryTip" candidateClass="UILabel"/>
+                <relationship kind="outlet" name="customaryTipLabel" candidateClass="UILabel"/>
                 <relationship kind="outlet" name="delegate"/>
                 <relationship kind="outlet" name="locationManager" candidateClass="CLLocationManager"/>
+                <relationship kind="outlet" name="pickerView" candidateClass="UIPickerView"/>
                 <relationship kind="outlet" name="toggleSwitch" candidateClass="UISwitch"/>
             </relationships>
         </class>
@@ -322,16 +341,21 @@
             <source key="sourceIdentifier" type="project" relativePath="./Classes/MainViewController.h"/>
             <relationships>
                 <relationship kind="action" name="CalculateTip:"/>
+                <relationship kind="action" name="beginEdit:"/>
                 <relationship kind="action" name="endEdit:"/>
                 <relationship kind="action" name="pickBillAmount:"/>
                 <relationship kind="action" name="pickNumberOfPeople:"/>
                 <relationship kind="action" name="pickTipPercentage:"/>
                 <relationship kind="outlet" name="lblCostPerPerson" candidateClass="UILabel"/>
+                <relationship kind="outlet" name="lblCostPerPersonLabel" candidateClass="UILabel"/>
+                <relationship kind="outlet" name="lblJoke" candidateClass="UILabel"/>
                 <relationship kind="outlet" name="lblNumberOfPeople" candidateClass="UILabel"/>
                 <relationship kind="outlet" name="lblTip" candidateClass="UILabel"/>
+                <relationship kind="outlet" name="lblTipLabel" candidateClass="UILabel"/>
                 <relationship kind="outlet" name="lblTipPercentage" candidateClass="UILabel"/>
                 <relationship kind="outlet" name="lblTotalBill" candidateClass="UILabel"/>
                 <relationship kind="outlet" name="lblTotalBillCost" candidateClass="UILabel"/>
+                <relationship kind="outlet" name="lblTotalBillCostLabel" candidateClass="UILabel"/>
                 <relationship kind="outlet" name="myPickerView" candidateClass="UIPickerView"/>
                 <relationship kind="outlet" name="txtNumberOfPeople" candidateClass="UITextField"/>
                 <relationship kind="outlet" name="txtTipPercentage" candidateClass="UITextField"/>
