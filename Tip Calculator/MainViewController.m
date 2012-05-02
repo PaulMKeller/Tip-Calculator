@@ -14,8 +14,9 @@
 @synthesize myPickerView, billAmountArray, tipSelected, tipPercentageArray, numberOfPeopleArray;
 @synthesize lblCostPerPersonLabel, lblTipLabel, lblTotalBillCostLabel, lblJoke;
 @synthesize myContentView;
-@synthesize myAdBannerView;
+//@synthesize myAdBannerView;
 @synthesize myAdBannerViewIsVisible;
+@synthesize myAdBannerView;
 
 
 - (void)didReceiveMemoryWarning
@@ -63,12 +64,16 @@
     
     [self setLabelText];
     
-    self.myAdBannerViewIsVisible= YES;
+    
+    
+    self.myAdBannerViewIsVisible = YES;
+    
     
 }
 
 - (void)viewDidUnload
 {
+    [self setMyAdBannerView:nil];
     [super viewDidUnload];
     // Release any retained subviews of the main view.
     // e.g. self.myOutlet = nil;

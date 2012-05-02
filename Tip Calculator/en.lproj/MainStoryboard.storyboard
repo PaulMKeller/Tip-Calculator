@@ -28,7 +28,7 @@
                                     <segue destination="6" kind="modal" identifier="showAlternate" modalTransitionStyle="flipHorizontal" id="11"/>
                                 </connections>
                             </button>
-                            <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" text="Tip Calulator" textAlignment="center" lineBreakMode="tailTruncation" minimumFontSize="10" id="AFk-RR-M0p">
+                            <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" text="Tip Calculator" textAlignment="center" lineBreakMode="tailTruncation" minimumFontSize="10" id="AFk-RR-M0p">
                                 <rect key="frame" x="39" y="5" width="243" height="21"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="17"/>
@@ -205,6 +205,7 @@
                         <outlet property="lblTotalBillCost" destination="rFd-sI-yDJ" id="RNr-WP-N42"/>
                         <outlet property="lblTotalBillCostLabel" destination="dMH-Wd-NHW" id="i0j-7I-E7Y"/>
                         <outlet property="locationManager" destination="4EM-EU-QJN" id="qin-9s-IuR"/>
+                        <outlet property="myAdBannerView" destination="iGa-9O-PJL" id="UW0-eI-Dj7"/>
                         <outlet property="myPickerView" destination="EiN-On-ZBB" id="yi6-Bi-oL7"/>
                         <outlet property="txtTotalBill" destination="s43-w0-gy9" id="FDf-wr-qSW"/>
                     </connections>
@@ -356,6 +357,8 @@
                 <relationship kind="outlet" name="lblTotalBill" candidateClass="UILabel"/>
                 <relationship kind="outlet" name="lblTotalBillCost" candidateClass="UILabel"/>
                 <relationship kind="outlet" name="lblTotalBillCostLabel" candidateClass="UILabel"/>
+                <relationship kind="outlet" name="myAdBannerView" candidateClass="ADBannerView"/>
+                <relationship kind="outlet" name="myContentView" candidateClass="UIView"/>
                 <relationship kind="outlet" name="myPickerView" candidateClass="UIPickerView"/>
                 <relationship kind="outlet" name="txtNumberOfPeople" candidateClass="UITextField"/>
                 <relationship kind="outlet" name="txtTipPercentage" candidateClass="UITextField"/>

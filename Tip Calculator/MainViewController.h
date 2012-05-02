@@ -9,7 +9,8 @@
 #import "FlipsideViewController.h"
 #import "TipCalcConfig.h"
 #import "AppDelegate.h"
-#import "iAd/ADBannerView.h"
+//#import "iAd/ADBannerView.h"
+#import <iAd/iAd.h>
 
 
 @interface MainViewController : UIViewController <FlipsideViewControllerDelegate, ADBannerViewDelegate>
@@ -48,7 +49,7 @@
     AppDelegate * sharedAppDelegate;
     
     UIView * myContentView;
-    id myAdBannerView;
+    //id myAdBannerView;
     BOOL myAdBannerViewIsVisible;
     
 }
@@ -80,8 +81,9 @@
 @property (nonatomic, assign) CGFloat tipSelected;
 
 @property (nonatomic, retain) IBOutlet UIView * myContentView;
-@property (nonatomic, retain) id myAdBannerView;
+//@property (nonatomic, retain) id myAdBannerView;
 @property (nonatomic) BOOL myAdBannerViewIsVisible;
+@property (strong, nonatomic) IBOutlet ADBannerView *myAdBannerView;
 
 
 
