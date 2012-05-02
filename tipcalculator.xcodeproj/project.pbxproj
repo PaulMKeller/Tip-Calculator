@@ -28,6 +28,8 @@
 		DAB68EA3150FF7540017AC4E /* SettingsViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = DAB68EA1150FF7540017AC4E /* SettingsViewController.m */; };
 		DAB68EA4150FF7540017AC4E /* SettingsViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = DAB68EA2150FF7540017AC4E /* SettingsViewController.xib */; };
 		DAE40281151F0922005FBB83 /* JokeOM.m in Sources */ = {isa = PBXBuildFile; fileRef = DAE40280151F0922005FBB83 /* JokeOM.m */; };
+		DAE663C61551CE630069607D /* LaunchImage.png in Resources */ = {isa = PBXBuildFile; fileRef = DAE663C51551CE630069607D /* LaunchImage.png */; };
+		DAE663C71551CE6E0069607D /* Default.png in Resources */ = {isa = PBXBuildFile; fileRef = DAE663C21551CA590069607D /* Default.png */; };
 		DAF85B54150E994A00B64D6D /* CoreLocation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = DAF85B53150E994A00B64D6D /* CoreLocation.framework */; };
 /* End PBXBuildFile section */
 
@@ -63,6 +65,8 @@
 		DAB68EA2150FF7540017AC4E /* SettingsViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = SettingsViewController.xib; sourceTree = "<group>"; };
 		DAE4027F151F0922005FBB83 /* JokeOM.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = JokeOM.h; sourceTree = "<group>"; };
 		DAE40280151F0922005FBB83 /* JokeOM.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = JokeOM.m; sourceTree = "<group>"; };
+		DAE663C21551CA590069607D /* Default.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Default.png; sourceTree = "<group>"; };
+		DAE663C51551CE630069607D /* LaunchImage.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = LaunchImage.png; sourceTree = "<group>"; };
 		DAF85B53150E994A00B64D6D /* CoreLocation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreLocation.framework; path = System/Library/Frameworks/CoreLocation.framework; sourceTree = SDKROOT; };
 /* End PBXFileReference section */
 
@@ -86,6 +90,7 @@
 		DA5B0D6915112D970008DEEC /* Graphics */ = {
 			isa = PBXGroup;
 			children = (
+				DAE663C51551CE630069607D /* LaunchImage.png */,
 				DA9262CE152640B200E51196 /* icon.png */,
 				DAA1292315225D0300D32657 /* money.png */,
 				DAA1292415225D0300D32657 /* TipCalculator1.png */,
@@ -98,6 +103,7 @@
 		DA9C83F1150BDCBB001FB9EF = {
 			isa = PBXGroup;
 			children = (
+				DAE663C21551CA590069607D /* Default.png */,
 				DA9C8406150BDCBB001FB9EF /* Tip Calculator */,
 				DA9C83FF150BDCBB001FB9EF /* Frameworks */,
 				DA9C83FD150BDCBB001FB9EF /* Products */,
@@ -221,6 +227,8 @@
 				DAA1292915225D0300D32657 /* TipCalculator2.png in Resources */,
 				DAA1292A15225D0300D32657 /* TipCalculator3.png in Resources */,
 				DA9262CF152640B200E51196 /* icon.png in Resources */,
+				DAE663C61551CE630069607D /* LaunchImage.png in Resources */,
+				DAE663C71551CE6E0069607D /* Default.png in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -269,8 +277,8 @@
 				ALWAYS_SEARCH_USER_PATHS = NO;
 				ARCHS = "$(ARCHS_STANDARD_32_BIT)";
 				CLANG_ENABLE_OBJC_ARC = YES;
-				CODE_SIGN_IDENTITY = "iPhone Developer: Paul Keller (553KV9KF8W)";
-				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer: Paul Keller (553KV9KF8W)";
+				CODE_SIGN_IDENTITY = "iPhone Distribution: Paul Keller";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Distribution: Paul Keller";
 				COPY_PHASE_STRIP = NO;
 				GCC_C_LANGUAGE_STANDARD = gnu99;
 				GCC_DYNAMIC_NO_PIC = NO;
@@ -284,9 +292,9 @@
 				GCC_WARN_ABOUT_MISSING_PROTOTYPES = YES;
 				GCC_WARN_ABOUT_RETURN_TYPE = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 5.0;
-				PROVISIONING_PROFILE = "F929BC3F-F685-4B73-AE5E-941685953605";
-				"PROVISIONING_PROFILE[sdk=iphoneos*]" = "F929BC3F-F685-4B73-AE5E-941685953605";
+				IPHONEOS_DEPLOYMENT_TARGET = 4.0;
+				PROVISIONING_PROFILE = "0DF6AB47-9625-4DE0-BEA5-17D05B14E458";
+				"PROVISIONING_PROFILE[sdk=iphoneos*]" = "0DF6AB47-9625-4DE0-BEA5-17D05B14E458";
 				SDKROOT = iphoneos;
 			};
 			name = Debug;
@@ -305,7 +313,7 @@
 				GCC_WARN_ABOUT_MISSING_PROTOTYPES = YES;
 				GCC_WARN_ABOUT_RETURN_TYPE = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 5.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 4.0;
 				OTHER_CFLAGS = "-DNS_BLOCK_ASSERTIONS=1";
 				PROVISIONING_PROFILE = "0DF6AB47-9625-4DE0-BEA5-17D05B14E458";
 				"PROVISIONING_PROFILE[sdk=iphoneos*]" = "0DF6AB47-9625-4DE0-BEA5-17D05B14E458";
@@ -317,13 +325,15 @@
 		DA9C841E150BDCBC001FB9EF /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
-				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer: Paul Keller (553KV9KF8W)";
+				CODE_SIGN_IDENTITY = "iPhone Distribution: Paul Keller";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Distribution: Paul Keller";
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "Tip Calculator/tipcalculator-Prefix.pch";
 				INFOPLIST_FILE = "Tip Calculator/tipcalculator-Info.plist";
 				IPHONEOS_DEPLOYMENT_TARGET = 5.0;
 				PRODUCT_NAME = tipcalculator;
-				"PROVISIONING_PROFILE[sdk=iphoneos*]" = "F929BC3F-F685-4B73-AE5E-941685953605";
+				PROVISIONING_PROFILE = "0DF6AB47-9625-4DE0-BEA5-17D05B14E458";
+				"PROVISIONING_PROFILE[sdk=iphoneos*]" = "0DF6AB47-9625-4DE0-BEA5-17D05B14E458";
 				SDKROOT = iphoneos5.0;
 				WRAPPER_EXTENSION = app;
 			};
@@ -332,13 +342,13 @@
 		DA9C841F150BDCBC001FB9EF /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
-				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer: Paul Keller (553KV9KF8W)";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Distribution: Paul Keller";
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "Tip Calculator/tipcalculator-Prefix.pch";
 				INFOPLIST_FILE = "Tip Calculator/tipcalculator-Info.plist";
 				IPHONEOS_DEPLOYMENT_TARGET = 5.0;
 				PRODUCT_NAME = tipcalculator;
-				"PROVISIONING_PROFILE[sdk=iphoneos*]" = "F929BC3F-F685-4B73-AE5E-941685953605";
+				"PROVISIONING_PROFILE[sdk=iphoneos*]" = "0DF6AB47-9625-4DE0-BEA5-17D05B14E458";
 				SDKROOT = iphoneos5.0;
 				WRAPPER_EXTENSION = app;
 			};
