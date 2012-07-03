@@ -42,7 +42,8 @@
 	}
     
     tipPercentageArray = [[NSMutableArray alloc] init];
-    for (int i = 1; i <= 30; i++) {
+    //for (int i = 1; i <= 30; i++) {
+    for (int i = 0; i <= 30; i++) {
         NSString *myString = [NSString stringWithFormat:@"%d%%", i];
 		[tipPercentageArray addObject:myString];
 
@@ -67,6 +68,11 @@
     
     
     self.myAdBannerViewIsVisible = YES;
+    
+    myAdBannerView.delegate = self;
+    myAdBannerView.frame = CGRectOffset(myAdBannerView.frame, 0.0, myAdBannerView.frame.size.height);
+    self.myAdBannerViewIsVisible = NO;
+
     
     
 }
@@ -102,7 +108,14 @@
 - (BOOL)shouldAutorotateToInterfaceOrientation:(UIInterfaceOrientation)interfaceOrientation
 {
     // Return YES for supported orientations
-    return (interfaceOrientation != UIInterfaceOrientationPortraitUpsideDown);
+    //return (interfaceOrientation != UIInterfaceOrientationPortraitUpsideDown);
+    if (interfaceOrientation == UIInterfaceOrientationPortrait) {
+        return YES;
+    } else if (interfaceOrientation == UIInterfaceOrientationPortraitUpsideDown) {
+        return YES;
+    } else {
+        return NO;
+    }
 }
 
 #pragma mark - Flipside View
@@ -254,7 +267,8 @@
         CGFloat bill = row + 1;
         lblTotalBill.text = [NSString stringWithFormat:@"%.0f", bill];
     } else if (pickerType == @"TipPercentage"){
-        tipSelected = row + 1; // We will set the float 'tipSelected' to row + 1 because the row count starts at 0, so it is 1 number behind our array.
+        //tipSelected = row + 1; // We will set the float 'tipSelected' to row + 1 because the row count starts at 0, so it is 1 number behind our array.
+        tipSelected = row; // Now you can have 0%
         lblTipPercentage.text = [NSString stringWithFormat:@"%.0f%%", tipSelected];
     } else {
         CGFloat numPeeps = row + 1;
@@ -283,6 +297,7 @@
     [myPickerView reloadAllComponents];
     
     [myPickerView selectRow:0 inComponent:0 animated:YES];
+    lblTipPercentage.text = [NSString stringWithFormat:@"%.0f%%", 0];
     
 }
 
@@ -298,31 +313,49 @@
 }
 
 #pragma mark iAd Methods
-- (void)bannerViewDidLoadAd:(ADBannerView *)banner
-{
-    if (!self.myAdBannerViewIsVisible)
-    {
-        [UIView beginAnimations:@"animateAdBannerOn" context:NULL];
-        // Assumes the banner view is just off the bottom of the screen.
-        banner.frame = CGRectOffset(banner.frame, 0, -banner.frame.size.height);
+//- (void)bannerViewDidLoadAd:(ADBannerView *)banner
+//{
+//    if (!self.myAdBannerViewIsVisible)
+//    {
+//        [UIView beginAnimations:@"animateAdBannerOn" context:NULL];
+//        // Assumes the banner view is just off the bottom of the screen.
+//        banner.frame = CGRectOffset(banner.frame, 0, -banner.frame.size.height);
+//        [UIView commitAnimations];
+//        self.myAdBannerViewIsVisible= YES;
+//    }
+//}
+//
+//- (void)bannerView:(ADBannerView *)banner didFailToReceiveAdWithError:(NSError *)error
+//{
+//    if (self.myAdBannerViewIsVisible)
+//    {
+//        [UIView beginAnimations:@"animateAdBannerOff" context:NULL];
+//        // Assumes the banner view is placed at the bottom of the screen.
+//        banner.frame = CGRectOffset(banner.frame, 0, banner.frame.size.height);
+//        [UIView commitAnimations];
+//        self.myAdBannerViewIsVisible = NO;
+//    }
+//}
+
+- (void)bannerViewDidLoadAd:(ADBannerView *)aBanner {
+    if (!self.myAdBannerViewIsVisible) {
+        [UIView beginAnimations:@"animatedAdBannerOn" context:NULL];
+        myAdBannerView.frame = CGRectOffset(myAdBannerView.frame, 0.0, -myAdBannerView.frame.size.height);
         [UIView commitAnimations];
-        self.myAdBannerViewIsVisible= YES;
+        self.myAdBannerViewIsVisible = YES;
+        NSLog(@"Has Ads, showing");
     }
 }
 
-- (void)bannerView:(ADBannerView *)banner didFailToReceiveAdWithError:(NSError *)error
-{
-    if (self.myAdBannerViewIsVisible)
-    {
-        [UIView beginAnimations:@"animateAdBannerOff" context:NULL];
-        // Assumes the banner view is placed at the bottom of the screen.
-        banner.frame = CGRectOffset(banner.frame, 0, banner.frame.size.height);
+- (void)bannerView:(ADBannerView *)aBanner didFailToReceiveAdWithError:(NSError *)error {
+    if (self.myAdBannerViewIsVisible) {
+        [UIView beginAnimations:@"animatedAdBannerOff" context:NULL];
+        myAdBannerView.frame = CGRectOffset(myAdBannerView.frame, 0.0, myAdBannerView.frame.size.height);
         [UIView commitAnimations];
         self.myAdBannerViewIsVisible = NO;
+        NSLog(@"Has No Ads, Hiding");
     }
 }
-
-
 
 
 @end

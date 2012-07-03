@@ -31,7 +31,8 @@
     currentCountry.text = @"";
     
     tipPercentageArray = [[NSMutableArray alloc] init];
-    for (int i = 1; i <= 30; i++) {
+    //for (int i = 1; i <= 30; i++) {
+    for (int i = 0; i <= 30; i++) {
         NSString *myString = [NSString stringWithFormat:@"%d%%", i];
 		[tipPercentageArray addObject:myString];
     }
@@ -74,7 +75,15 @@
 - (BOOL)shouldAutorotateToInterfaceOrientation:(UIInterfaceOrientation)interfaceOrientation
 {
     // Return YES for supported orientations
-    return (interfaceOrientation != UIInterfaceOrientationPortraitUpsideDown);
+    //return (interfaceOrientation != UIInterfaceOrientationPortraitUpsideDown);
+    if (interfaceOrientation == UIInterfaceOrientationPortrait) {
+        return YES;
+    } else if (interfaceOrientation == UIInterfaceOrientationPortraitUpsideDown) {
+        return YES;
+    } else {
+        return NO;
+    }
+
 }
 
 #pragma mark - Actions
@@ -85,7 +94,8 @@
     row = [pickerView selectedRowInComponent:0];
     
     NSUserDefaults * defaults  = [NSUserDefaults standardUserDefaults];
-    [defaults setInteger:row + 1 forKey: K_DEFAULT_TIP_PERC];
+    //[defaults setInteger:row + 1 forKey: K_DEFAULT_TIP_PERC];
+    [defaults setInteger:row forKey: K_DEFAULT_TIP_PERC];
     [defaults synchronize];
     
     [self.delegate flipsideViewControllerDidFinish:self];
@@ -118,7 +128,8 @@
         currentCountry.text = @"";
         
         [defaults setObject:@"" forKey:K_CURRENT_COUNTRY];
-        [defaults setInteger:1 forKey:K_DEFAULT_TIP_PERC];
+        //[defaults setInteger:1 forKey:K_DEFAULT_TIP_PERC];
+        [defaults setInteger:10 forKey:K_DEFAULT_TIP_PERC];
         [defaults setObject:nil forKey:K_CURRENT_CURRENCY];
     }
     
@@ -149,7 +160,8 @@
                     
                     
                     //Now set the spinner to minTipPerc
-                    [pickerView selectRow:[cusDet.minTipPerc intValue] - 1 inComponent:0 animated:YES];
+                    //[pickerView selectRow:[cusDet.minTipPerc intValue] - 1 inComponent:0 animated:YES];
+                    [pickerView selectRow:[cusDet.minTipPerc intValue] inComponent:0 animated:YES];
                     
                     //Now set the currency symbol property
                     NSUserDefaults * defaults  = [NSUserDefaults standardUserDefaults];
@@ -167,7 +179,8 @@
         customaryTip.text = @"No Tip Info Found";
         NSUserDefaults * defaults  = [NSUserDefaults standardUserDefaults];
         [defaults setObject:@"" forKey:K_CURRENT_COUNTRY];
-        [defaults setInteger:1 forKey:K_DEFAULT_TIP_PERC];
+        //[defaults setInteger:1 forKey:K_DEFAULT_TIP_PERC];
+        [defaults setInteger:10 forKey:K_DEFAULT_TIP_PERC];
         [defaults setObject:nil forKey:K_CURRENT_CURRENCY];
         [defaults synchronize];
     }
@@ -195,7 +208,8 @@
 - (void)pickerView:(UIPickerView *)thePickerView didSelectRow:(NSInteger)row inComponent:(NSInteger)component { // And now the final part of the UIPickerView, what happens when a row is selected.
     
     NSUserDefaults * defaults  = [NSUserDefaults standardUserDefaults];
-    [defaults setInteger:row + 1 forKey:K_DEFAULT_TIP_PERC];
+    //[defaults setInteger:row + 1 forKey:K_DEFAULT_TIP_PERC];
+    [defaults setInteger:row forKey:K_DEFAULT_TIP_PERC];
     [defaults synchronize];
     
 }

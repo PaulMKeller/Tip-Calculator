@@ -110,7 +110,7 @@
                                 </connections>
                             </button>
                             <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" text="Joke" lineBreakMode="wordWrap" numberOfLines="0" minimumFontSize="10" id="Z94-RJ-cHe">
-                                <rect key="frame" x="14" y="300" width="295" height="50"/>
+                                <rect key="frame" x="14" y="300" width="259" height="102"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="13"/>
                                 <color key="textColor" red="0.0" green="0.30470610573891077" blue="0.98913043478260865" alpha="1" colorSpace="calibratedRGB"/>
@@ -131,7 +131,7 @@
                                 <nil key="highlightedColor"/>
                             </label>
                             <pickerView contentMode="scaleToFill" id="EiN-On-ZBB">
-                                <rect key="frame" x="0.0" y="191" width="320" height="216"/>
+                                <rect key="frame" x="0.0" y="193" width="320" height="216"/>
                                 <autoresizingMask key="autoresizingMask" widthSizable="YES" flexibleMaxY="YES"/>
                                 <connections>
                                     <outlet property="dataSource" destination="2" id="Qrm-St-3Ih"/>

@@ -82,7 +82,7 @@
 
 @property (nonatomic, retain) IBOutlet UIView * myContentView;
 //@property (nonatomic, retain) id myAdBannerView;
-@property (nonatomic) BOOL myAdBannerViewIsVisible;
+@property (nonatomic, assign) BOOL myAdBannerViewIsVisible;
 @property (strong, nonatomic) IBOutlet ADBannerView *myAdBannerView;
 
 
